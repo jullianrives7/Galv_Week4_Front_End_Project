@@ -1,0 +1,32 @@
+#main {
+    text-align: center;
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+
+#user-section {
+    padding-bottom: 30px;
+}
+
+.card {
+    margin: auto
+}
+
+.art-and-text-container {
+    display: flex;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    margin-top: 27px;
+    margin-left: 5px;
+}
+
+.card-text-artist {}
+
+.card-text-album {
+    font-size: 14px;
+    color: darkslategrey;
+}
