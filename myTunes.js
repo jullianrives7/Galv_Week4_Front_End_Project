@@ -3,6 +3,7 @@ const $searchResults = $("#search-results");
 const $submit = $("#submit");
 
 
+
 //function that initiates result card generation after getting search data
 function returnResults(){
     
@@ -39,8 +40,9 @@ function returnResults(){
                                     var $figcaption = $('<figcaption></figcaption>');
                                     var $audio = $('<audio controls src=""></audio>');
                                     var $a = $('<a href="">Download audio</a>');
+                                    
 
-
+                    $bootstrapHorizonalCard.attr('id', data.results[index].kind);
                     $albumArt.attr('src', data.results[index].artworkUrl100);
                     $songTitle.text(data.results[index].trackName);
                     $artistName.text(data.results[index].artistName);
@@ -79,7 +81,19 @@ $("#text").keydown(function (e) {
 });
 
 
-
+//on clicking song type filter button, hide all but song types
+$(".song-filter").click(function(){
+    console.log("song filter clicked")
+    for (var index=0; index < $searchResults.length; index++){
+        console.log($searchResults[index])
+        console.log($('#song'));
+        //$('#feature-movie').hide();
+        if($('#feature-movie')){
+            $($searchResults[index]).hide();
+        }
+       
+    }
+});
 
 
             // <div class="card mb-3" style="max-width: 500px;" style="max-height: fit-content;">

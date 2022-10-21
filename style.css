@@ -1,12 +1,33 @@
+#search-results {
+    background-image: url("iTunes-icon.png");
+    background-size: auto;
+    background-repeat: repeat-y;
+    background-position: center center;
+    min-width: 100%;
+    min-height: 1000px;
+}
+
+#header {
+    font-family: 'Lobster', sans-serif;
+    text-shadow: 2px 2px rgb(239, 211, 211);
+}
+
+#text {
+    box-shadow: 0px 0px 3px 0px whitesmoke;
+}
+
 #main {
     text-align: center;
     margin: auto;
     background-color: whitesmoke;
 }
 
+.btn-outline-danger {
+    margin-bottom: 20px;
+}
 
 #user-section {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .card {
